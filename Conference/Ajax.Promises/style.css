@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .main {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 250px;
+  height: 80px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main > * {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 0px;
+  width: 0px;
+  margin: auto;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: white;
+  transform: scale();
+}
+
+.act {
+  background-color: #7cfc00;
+  transition: transform 1s ease-in-out;
+  height: 50px;
+  width: 50px;
+} */
+
+.main_info {
+  width: 900px;
+  height: fit-content;
+  background-color: rgb(44, 44, 44);
+  margin: 0 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgb(0, 0, 0);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.mainCard {
+  background-color: whitesmoke;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  padding: 0.5rem 1.5rem 2.5rem 1.5rem;
+  border: none;
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  font-size: 1.5rem;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+}

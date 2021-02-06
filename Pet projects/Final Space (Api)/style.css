@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Share+Tech+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*   font-family: "Montserrat", sans-serif; */
+  /*   font-family: "Poppins", sans-serif; */
+  /*   font-family: 'Gruppo', cursive; */
+  font-family: "Share Tech Mono", monospace;
+  background: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=827&q=80")
+    no-repeat center center fixed;
+  background-size: cover;
+  background: cover;
+  text-shadow: 0 0px 10px rgba(0, 250, 0, 1);
+  color: chartreuse;
+  display: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.characters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+}
+
+.characters__box {
+  text-align: center;
+  padding: 3rem;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-color: chartreuse;
+  box-shadow: 0 0px 15px rgba(0, 250, 0, 1), 0 0px 15px rgba(0, 250, 0, 1) inset;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border: 1px solid;
+  border-radius: 30px;
+  width: 600px;
+  height: 800px;
+  overflow: hidden;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-color: chartreuse;
+  box-shadow: 0 0px 15px rgba(0, 250, 0, 1), 0 0px 15px rgba(0, 250, 0, 1) inset;
+}
+
+.id {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.card__main {
+  display: flex;
+  /* border-bottom: 3px solid black; */
+}
+
+.card__main-left {
+  display: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 250px;
+  border: 2px solid;
+  border-color: aliceblue;
+  border-radius: 30px;
+  margin: 0 2rem 0.5rem 2.5rem;
+  border-color: chartreuse;
+  box-shadow: 0 0px 15px rgba(0, 250, 0, 1), 0 0px 15px rgba(0, 250, 0, 1) inset;
+}
+
+.gender {
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 20pt;
+  max-width: 300px;
+}
+
+.card__main-right {
+  display: table-column;
+  width: 100%;
+}
+
+.name {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.origin {
+  margin: 0.5rem 1rem;
+  font-size: 12pt;
+}
+
+.species {
+  margin: 0 1rem;
+  font-size: 20pt;
+}
+
+.status {
+  padding-left: 2rem;
+}
+
+.status.alive {
+  font-size: 20pt;
+  background-color: rgba(127, 255, 0, 0.7);
+  color: darkgreen;
+  text-shadow: 0 0px 15px rgba(0, 250, 0, 1);
+}
+
+.status.operational {
+  font-size: 20pt;
+  background-color: rgba(0, 191, 255, 0.7);
+  color: #00416a;
+  text-shadow: 0 0px 15px rgba(0, 191, 255, 1);
+}
+
+.status.deceased {
+  font-size: 20pt;
+  background-color: rgba(250, 0, 0, 0.7);
+  color: rgb(100, 0, 0);
+  text-shadow: 0 0px 10px rgba(250, 0, 0, 1);
+}
+
+.status.deceased-possessed {
+  font-size: 20pt;
+  background-color: rgba(220, 20, 60, 0.7);
+  color: rgb(36, 9, 53);
+  text-shadow: 0 0px 15px rgba(36, 9, 53, 1);
+}
+
+.status.unknown {
+  font-size: 20pt;
+  background-color: rgba(150, 150, 150, 0.7);
+  color: rgb(40, 40, 40);
+  text-shadow: none;
+}
+
+.card__add {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.card__add-left {
+  width: 50%;
+  padding-left: 1rem;
+}
+
+.abilities {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.abilities__list {
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
+
+.card__add-right {
+  width: 50%;
+}
+
+.alias {
+  text-align: center;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.alias__list {
+  font-size: 1.3rem;
+  padding: 0, 1rem;
+}
