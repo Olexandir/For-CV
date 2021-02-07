@@ -10,6 +10,79 @@
 
 body {
   /*   font-family: "Montserrat", sans-serif; */
-/*   font-family: "Poppins", sans-serif; */
+  /*   font-family: "Poppins", sans-serif; */
   font-family: "Beaufort for LOL", serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffffd9;
+  display: flex;
+  margin: 0.25rem;
+  /*   border: 1.5px solid; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.card__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__left-img {
+  height: 125px;
+}
+
+.card__right {
+  font-size: 0.5rem;
+  display: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.card__right > * {
+  display: column;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  height: 25%;
+}
+
+.card__right-name {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.card__right-gender {
+  padding-left: 1rem;
+}
+
+.card__right-location {
+  padding-left: 1rem;
+}
+
+.card__right-status {
+  text-align: center;
+}
+
+.alive {
+  background-color: rgb(0, 100, 0);
+  color: rgb(0, 255, 40);
+}
+
+.dead {
+  background-color: rgb(100, 0, 0);
+  color: rgb(255, 0, 20);
+}
+
+.unknown {
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
 }
