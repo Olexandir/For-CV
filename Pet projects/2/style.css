@@ -21,7 +21,45 @@ body {
   flex-wrap: wrap;
 }
 
+.container__card {
+  width: 150px;
+  height: 150px;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.container__card-img {
+  width: 100%;
+}
+
+.container__card.alive {
+  box-shadow: 0 0 15px 5px rgba(0, 255, 0, 1);
+}
+
+.container__card.dead {
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 1);
+}
+
+.container__card.unknown {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);
+}
+
+.popup-container.hidden {
+  display: none;
+}
+
+.popup__card-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100vh;
+}
+
 .card {
+  width: 600px;
   background-color: #ffffffd9;
   display: flex;
   margin: 0.25rem;
@@ -55,9 +93,17 @@ body {
   height: 25%;
 }
 
+.name-close {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card__right-name {
   text-align: center;
   text-decoration: underline;
+}
+
+.close {
 }
 
 .card__right-gender {
@@ -72,17 +118,17 @@ body {
   text-align: center;
 }
 
-.alive {
+.card__right-status.alive {
   background-color: rgb(0, 100, 0);
   color: rgb(0, 255, 40);
 }
 
-.dead {
+.card__right-status.dead {
   background-color: rgb(100, 0, 0);
   color: rgb(255, 0, 20);
 }
 
-.unknown {
+.card__right-status.unknown {
   background-color: rgb(20, 20, 20);
   color: rgb(255, 255, 255);
 }
