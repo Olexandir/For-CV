@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initials</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0e14b3abd7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="forInput" id="forInput">
+        <input type="text" class="hourIn" id="hourIn" placeholder="00" />
+
+        <input type="text" class="minIn" id="minIn" placeholder="00" />
+
+        <input type="text" class="secIn" id="secIn" placeholder="00" />
+      </div>
+
+      <div class="time" id="time">
+        <p class="hour" id="hour">00</p>
+        <span>:</span>
+        <p class="min" id="min">00</p>
+        <span>:</span>
+        <p class="sec" id="sec">00</p>
+      </div>
+
+      <div class="panel" id="panel">
+        <div class="start" id="start"><i class="fas fa-play"></i></div>
+        <div class="stop" id="stop"><i class="fas fa-pause"></i></div>
+        <div class="reset" id="reset"><i class="fas fa-redo"></i></div>
+      </div>
+      <div class="next" id="next"><i class="fas fa-chevron-down"></i></div>
+    </div>
+  </body>
+</html>
