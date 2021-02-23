@@ -11,3 +11,148 @@ body {
   /*   font-family: "Montserrat", sans-serif; */
   font-family: "Poppins", sans-serif;
 }
+
+.btn-wrapper{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 50px;
+    height: 50px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.btn-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  filter: blur(8px);
+}
+
+.grey{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.grey::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+#btn{
+z-index: 10;
+background-color: none;
+font-size: 1.25rem;
+}
+
+/* Разделитель ----------------------------------*/
+
+.menu-wrapper{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 150px;
+  height: 175px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 11;
+  transform: translateX(-110%);
+  transition: linear 1.5s ease-in-out;
+}
+
+.menu-wrapper::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 150px;
+height: 175px;
+background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.menu-wrapper::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 150px;
+height: 175px;
+background: linear-gradient(45deg, #ffbc00, #ff0058);
+filter: blur(10px);
+}
+
+.grey2 {
+position: absolute;
+top: 2px;
+left: 2px;
+bottom: 2px;
+right: 2px;
+background: rgba(0, 0, 0, 0.6);
+z-index: 2;
+}
+
+.grey2::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100%;
+background: rgba(255, 255, 255, 0.1);
+pointer-events: none;
+}
+
+.menu{
+  z-index: 12;
+  height: 100%;
+}
+
+.list {
+  z-index: 12;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+li{
+  text-align: left;
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  width: 100%;
+}
