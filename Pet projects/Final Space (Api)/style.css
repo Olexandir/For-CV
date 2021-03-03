@@ -10,9 +10,7 @@
 }
 
 body {
-  /*   font-family: "Montserrat", sans-serif; */
-  /*   font-family: "Poppins", sans-serif; */
-  /*   font-family: 'Gruppo', cursive; */
+
   font-family: "Share Tech Mono", monospace;
   background: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=827&q=80")
     no-repeat center center fixed;
@@ -37,6 +35,7 @@ body {
   padding: 3rem;
   background-color: rgba(20, 20, 20, 0.85);
   border-color: chartreuse;
+  filter: blur(50px);
   box-shadow: 0 0px 15px rgba(0, 250, 0, 1), 0 0px 15px rgba(0, 250, 0, 1) inset;
 }
 
@@ -59,6 +58,7 @@ body {
   overflow: hidden;
   background-color: rgba(20, 20, 20, 0.85);
   border-color: chartreuse;
+
   box-shadow: 0 0px 15px rgba(0, 250, 0, 1), 0 0px 15px rgba(0, 250, 0, 1) inset;
 }
 
